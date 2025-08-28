@@ -387,8 +387,7 @@ footer{padding:40px 20px; text-align:center; color:#a3a3a3}
     };
     document.addEventListener('scroll', onScroll);
     onScroll();
-
-    // animate skill bars when in view
+      
     const io = new IntersectionObserver((entries)=>{
       entries.forEach(e=>{
         if(e.isIntersecting){
@@ -401,9 +400,8 @@ footer{padding:40px 20px; text-align:center; color:#a3a3a3}
       })
     },{threshold:0.3});
     document.querySelectorAll('.skills').forEach(s=>io.observe(s));
-
-    // year
-    document.getElementById('yr').textContent = new Date().getFullYear();
+ document.getElementById('yr').textContent = new Date().getFullYear();
   </script></body>
 
 </html>
+
